@@ -63,7 +63,7 @@ module.exports = {
     )
       .then((user) =>
         !user
-          ? res.status(404).json({ message: 'No User found with this ID' })
+          ? res.status(404).json({ message: 'No User found with that ID' })
           : res.json(user)
       )
       .catch((err) => res.status(500).json(err));
@@ -78,7 +78,7 @@ module.exports = {
       .then(
         (user) =>
           !user
-            ? res.status(404).json({ message: 'No User found with this ID' })
+            ? res.status(404).json({ message: 'No User found with that ID' })
             : res.json(user)
       )
       .catch((err) => res.status(500).json(err));
